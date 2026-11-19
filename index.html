@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="ru"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Noteverse — конспекты</title>
+<link rel="manifest" href="manifest.webmanifest"><link rel="icon" href="icon.svg" type="image/svg+xml"><meta name="theme-color" content="#8B70D6">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Manrope:wght@400;700&family=Nunito+Sans:wght@400;700&family=Roboto:wght@400;700&family=Lora:wght@400;700&family=Playfair+Display:wght@400;700&family=Cormorant+Garamond:wght@500;700&family=Caveat:wght@500;700&family=IBM+Plex+Mono&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css"><link rel="stylesheet" href="css/extra.css">
+</head><body>
+<aside id="sb"><div class="sbh"><div><div class="logo">NOTEVERSE</div><div class="tag">Your Knowledge. Your Space.</div></div><button id="nn" class="pri" title="Новая заметка">＋ Новая</button></div>
+<input id="q" placeholder="Поиск по заметкам…" aria-label="Поиск"><div class="tabs"><button data-f="all" class="on">Все</button><button data-f="fav">★ Избранное</button></div><div id="ls"></div></aside>
+<main>
+<header><button id="mb" aria-label="Меню">☰</button><input id="tt" placeholder="Название конспекта" aria-label="Название">
+<button id="dw">✎ Рисовать</button><button id="tp">Шаблоны</button><button id="ds">Дизайн</button><button id="ex">Скачать ▾</button><button id="sg" title="Настройки">⚙</button><button id="th" title="Светлая / тёмная тема">🌓</button><button id="fc" title="Режим фокуса">Фокус</button></header>
+<div id="tb">
+<button id="fxb" class="fxb" title="Текстовые эффекты">✨ FX</button><button data-c="bold"><b>B</b></button><button data-c="italic"><i>I</i></button><button data-c="underline"><u>U</u></button>
+<button data-c="formatBlock" data-v="h1">H1</button><button data-c="formatBlock" data-v="h2">H2</button><button data-c="formatBlock" data-v="p">¶</button>
+<button data-c="insertUnorderedList">• Список</button><button data-c="insertOrderedList">1. Список</button><button id="ck">☑ Чек-лист</button>
+<button data-c="formatBlock" data-v="blockquote">❝ Цитата</button><button id="cd">&lt;/&gt;</button><button data-c="insertHorizontalRule">―</button><button id="tbl">▦ Таблица</button><button id="im">🖼 Фото</button>
+<label title="Цвет текста">A <input type="color" id="fcol" value="#d33" style="width:26px;padding:0;border:0"></label>
+<label title="Маркер">🖍 <input type="color" id="hcol" value="#ffe066" style="width:26px;padding:0;border:0"></label><input type="file" id="fi" accept="image/*" hidden></div>
+<div id="dt" hidden><button data-t="pen" class="on">Ручка</button><button data-t="hl">Маркер</button><button data-t="er">Ластик</button>
+<input type="color" id="dc" value="#e5484d" aria-label="Цвет"><input type="range" id="dz" min="1" max="20" value="3" aria-label="Толщина"><button id="un">↶ Отмена</button><button id="re">↷ Повтор</button><button id="cl">Очистить рисунок</button></div>
+<div id="sc"><div id="page" data-p="none"><canvas id="fxc"></canvas><div id="ed" contenteditable="true" spellcheck="true"></div><canvas id="cv"></canvas></div></div>
+<footer><span id="wc"></span><span id="st"></span></footer></main>
+<div class="pop" id="pe" hidden></div><aside id="sp" hidden></aside><aside id="fp" hidden></aside>
+<aside id="pn" hidden><div style="display:flex;justify-content:space-between"><b>Дизайн страницы</b><button id="pc">✕</button></div>
+<h4>Стиль</h4><div class="g" id="gp"></div><h4>Палитра (4 цвета + контраст)</h4><div class="g" id="gc"></div>
+<h4>Шрифт заголовков</h4><select id="hf"></select><h4>Шрифт текста</h4><select id="bf"></select>
+<h4>Размер текста: <span id="fsv"></span></h4><input type="range" id="fs" min="13" max="24" style="width:100%"></aside>
+<script src="js/app.js"></script>
+<script src="js/fx.js"></script>
+<script src="js/templates.js"></script>
+<script src="js/pdfview.js"></script>
+<script src="js/init.js"></script>
+<script src="js/pwa.js"></script>
+</body></html>

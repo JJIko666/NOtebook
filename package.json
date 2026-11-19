@@ -1,0 +1,1 @@
+{"name":"noteverse","version":"1.3.0","private":true,"description":"Noteverse: offline-first notes app","scripts":{"start":"npx serve . -l 5173"}}
